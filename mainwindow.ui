@@ -6,9 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1763</width>
+    <width>1792</width>
     <height>1241</height>
    </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Monospace</family>
+   </font>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -34,7 +39,13 @@
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QTextBrowser" name="textBrowser"/>
+      <widget class="QTextBrowser" name="textBrowser">
+       <property name="font">
+        <font>
+         <family>Monospace</family>
+        </font>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -44,7 +55,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1763</width>
+     <width>1792</width>
      <height>39</height>
     </rect>
    </property>
@@ -67,6 +78,17 @@
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <widget class="QDockWidget" name="dockWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+    </font>
+   </property>
    <property name="windowTitle">
     <string>Images</string>
    </property>
@@ -79,8 +101,8 @@
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>351</width>
-       <height>891</height>
+       <width>361</width>
+       <height>991</height>
       </rect>
      </property>
     </widget>
@@ -88,7 +110,7 @@
      <property name="geometry">
       <rect>
        <x>80</x>
-       <y>920</y>
+       <y>990</y>
        <width>170</width>
        <height>48</height>
       </rect>
@@ -100,8 +122,8 @@
     <widget class="QPushButton" name="dirButton">
      <property name="geometry">
       <rect>
-       <x>49</x>
-       <y>1000</y>
+       <x>50</x>
+       <y>1040</y>
        <width>261</width>
        <height>48</height>
       </rect>
@@ -115,6 +137,11 @@
   <action name="actionExit">
    <property name="text">
     <string>Exit</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+    </font>
    </property>
   </action>
  </widget>

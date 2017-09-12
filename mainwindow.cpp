@@ -82,8 +82,10 @@ void MainWindow::showInfo(const QModelIndex& index)
             lkp[id].drawHumans(scene);
             //scene->addLine(0, 0, 42, 42, QPen(QBrush(Qt::black),1));
 
+            scene->setSceneRect(pixItem->boundingRect());
             ui->graphicsView->setScene(scene);
-            ui->graphicsView->setFixedSize(img.width(), img.height());
+            //ui->graphicsView->setFixedSize(img.width(), img.height());
+            ui->graphicsView->setFixedSize(scene->sceneRect().width(), scene->sceneRect().height());
             //ui->graphicsView->update();
             ui->graphicsView->show();
         }
