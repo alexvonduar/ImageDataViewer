@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1792</width>
-    <height>1241</height>
+    <width>1484</width>
+    <height>1160</height>
    </rect>
   </property>
   <property name="font">
@@ -19,44 +19,38 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QWidget" name="gridLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>9</x>
-      <y>9</y>
-      <width>1401</width>
-      <height>1111</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="0">
-      <widget class="QGraphicsView" name="graphicsView">
-       <property name="font">
-        <font>
-         <family>Monospace</family>
-        </font>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QTextBrowser" name="textBrowser">
-       <property name="font">
-        <font>
-         <family>Monospace</family>
-        </font>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QGraphicsView" name="graphicsView">
+        <property name="font">
+         <font>
+          <family>Monospace</family>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QTextBrowser" name="textBrowser">
+        <property name="font">
+         <font>
+          <family>Monospace</family>
+         </font>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1792</width>
-     <height>39</height>
+     <width>1484</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -96,42 +90,25 @@
     <number>1</number>
    </attribute>
    <widget class="QWidget" name="dockWidgetContents">
-    <widget class="QListView" name="listView">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>361</width>
-       <height>991</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="openButton">
-     <property name="geometry">
-      <rect>
-       <x>80</x>
-       <y>990</y>
-       <width>170</width>
-       <height>48</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Open List</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="dirButton">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>1040</y>
-       <width>261</width>
-       <height>48</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Set Image Dir</string>
-     </property>
-    </widget>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QListView" name="listView"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="openButton">
+       <property name="text">
+        <string>Open List</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="dirButton">
+       <property name="text">
+        <string>Set Image Dir</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <action name="actionExit">
