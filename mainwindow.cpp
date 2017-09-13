@@ -76,17 +76,15 @@ void MainWindow::showInfo(const QModelIndex& index)
             delete scene;
             scene = new QGraphicsScene(this);
             pixItem->setPixmap(QPixmap::fromImage(img));
+            pixItem->setPos(0, 0);
             scene->addItem(pixItem);
-            //item.setPos(0, 0);
 
             lkp[id].drawHumans(scene);
-            //scene->addLine(0, 0, 42, 42, QPen(QBrush(Qt::black),1));
 
-            scene->setSceneRect(pixItem->boundingRect());
             ui->graphicsView->setScene(scene);
-            //ui->graphicsView->setFixedSize(img.width(), img.height());
-            ui->graphicsView->setFixedSize(scene->sceneRect().width(), scene->sceneRect().height());
-            //ui->graphicsView->update();
+            int width = scene->itemsBoundingRect().width() + 2 * ui->graphicsView->frameWidth() + 20;
+            int height = scene->itemsBoundingRect().height() + 2 * ui->graphicsView->frameWidth() + 20;
+            ui->graphicsView->setFixedSize(width, height);
             ui->graphicsView->show();
         }
     }
